@@ -43,6 +43,7 @@ else:
     print(game_images[computer_choice])
 
     # if user_choice >= 3 or user_choice < 0:
+    
     #     print("You typed an invalid number, you lose!")
     
     # elif user_choice == 0 and computer_choice == 2:
