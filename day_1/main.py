@@ -1,14 +1,14 @@
 # Printing a string
 # print("Hello World\n Hello World\n  Hello World")
 
-# String Concatenation
-# print("Hello " + "Uri")
-# print("Hello" + " " + "Uri")
+#String Concatenation
+print("Hello " + "Uri")
+print("Hello" + " " + "Uri")
 
 #length of a string
 #1
-# name = input()
-# print(len(name))
+name = input()
+print(len(name))
 
 # #2
 # print(len(input()))
