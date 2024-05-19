@@ -1,5 +1,5 @@
 import random
-from hangman_art import logo, stages
+from day_1.test_env.hangman.hangman_art import logo, stages
 from hangman_words import word_list
 
 
