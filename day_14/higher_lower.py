@@ -87,3 +87,5 @@ while game_should_continue:
     else:
         game_should_continue = False
         print(f"sorry, thats wrong. Final score: {score}.")
+
+        # Check all todos
