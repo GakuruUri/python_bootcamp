@@ -5,6 +5,7 @@ from money_machine import MoneyMachine
 
 money_machine = MoneyMachine()
 coffee_maker = CoffeeMaker()
+<<<<<<< HEAD
 menu = Menu()
 is_on = True
 
@@ -28,3 +29,7 @@ while is_on:
         if coffee_maker.is_resource_sufficient(drink) and money_machine.make_payment(drink.cost):
             coffee_maker.make_coffee(drink)
 
+=======
+coffee_maker.report()
+money_machine.report()
+>>>>>>> c5b46b3 (Day 16 of 100 days of code.)
