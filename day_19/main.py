@@ -1,4 +1,6 @@
 from turtle import Turtle, Screen
+import heroes
+
 
 
 tim = Turtle()
