@@ -46,6 +46,7 @@ while game_is_on:
     if snake.head.distance(food) < 15:
         #   print("nom nom nom")
         food.refresh()
+        scoreboard.increase_score()
 
     # for seg_num in range(len(segments) - 1, 0, -1):
     #     new_x = segments[seg_num - 1].xcor()
@@ -55,3 +56,13 @@ while game_is_on:
     # segments[0].forward(20)
 
 screen.exitonclick()
+
+
+"""
+1. Create a snake body
+2. Move the snake
+3. Detect Collision with food.
+4. Create a scoreboard
+5. Detect collision with wall
+6. Detect collision with tail
+"""
