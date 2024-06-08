@@ -20,11 +20,10 @@ Writing to a file
 # with open("my_file.txt", mode="a") as file:
 #     file.write("New Shit!")
 
-
-with open("my_file.txt") as file:
+# with open("/home/uriroots/Documents/my_file.txt") as file: Absolute
+with open("../../Documents/my_file.txt") as file:  # Relative file path
     contents = file.read()
     print(contents)
 
-
-with open("new_file.txt", mode="w") as file:
-    file.write("New Shit!")
+# with open("new_file.txt", mode="w") as file:
+#     file.write("New Shit!")
