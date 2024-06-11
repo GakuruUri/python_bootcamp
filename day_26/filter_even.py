@@ -1,4 +1,4 @@
-list_of_strings = [9 0 32 8 2 8 64 29 42 99].split()','
+# list_of_strings = [9 0 32 8 2 8 64 29 42 99].split()','
 
 # List comprehension to convert strings to integers
 convert = [int(n) for n in list_of_strings]
