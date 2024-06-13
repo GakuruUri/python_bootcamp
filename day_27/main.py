@@ -18,8 +18,8 @@ my_label.config(text="New Text")
 
 def button_clicked():
     print("I got clicked")
-    new_text = input.get()
-    my_label.config(text=new_text)
+    new_word = input.get()
+    my_label.config(text=new_word)
     # my_label.config(text="Button Got Clicked.")
 
 
