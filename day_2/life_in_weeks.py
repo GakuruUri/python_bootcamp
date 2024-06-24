@@ -1,15 +1,23 @@
-age = input("Please enter your current age: ")
-years = 99 - int(age)
+age = input("Your age?")
+years = 75 - int(age)
 
 age_in_weeks = years * 52
-print(f"You have {age_in_weeks} weeks left.")
+print("You have {age_in_weeks} to live.")
 
 
 
-age = input("Enter your current age:")
+# age = input("Please enter your current age: ")
+# years = 99 - int(age)
 
-years = 90 - int(age)
+# age_in_weeks = years * 52
+# print(f"You have {age_in_weeks} weeks left.")
 
-age_in_weeks = years * 52
 
-print(f"You have {age_in_weeks} weeks left to live.")
+
+# age = input("Enter your current age:")
+
+# years = 90 - int(age)
+
+# age_in_weeks = years * 52
+
+# print(f"You have {age_in_weeks} weeks left to live.")
