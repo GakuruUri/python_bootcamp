@@ -27,6 +27,7 @@ print(heading)
 
 
 section_heading = soup.find(name="h3", class_="heading")
+print("----")
 print(section_heading)
 print(section_heading.getText())
 print(section_heading.name)
