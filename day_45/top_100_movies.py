@@ -1,13 +1,20 @@
-from bs4 import BeautifulSoup
-from pathlib import Path
 import requests
+from bs4 import BeautifulSoup
 
 
-response = requests.get("https://www.empireonline.com/movies/features/best-movies-2/")
+URL = "https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/"
+
+response = requests.get(URL)
+website_html = response.text
 
 
-file_path = Path("100_movies.txt")
-with file_path.open('w') as file:
-    for file in response:
-        100_movies.append(response)
+soup = BeautifulSoup(website_html, "html.parser")
 
+all_movies = soup.find_all(name="h3", class_="title")
+
+movie_titles = [movie.getText() for movie in all_movies]
+movies = movie_titles[::-1]
+
+with open("movies.text", mode="w") as file:
+    for movie in movies:
+        file.write(f"{movie}\n")
