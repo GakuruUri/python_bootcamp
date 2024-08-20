@@ -11,7 +11,7 @@ soup = BeautifulSoup(respose.text, "html.parser")
 song_names_spans = soup.select("li ul li h3")
 song_names = [song.getText().strip() for song in song_names_spans]
 
-print(song_names)
+print(song_names, "\n")
 
 #  id="title-of-a-story",
 
