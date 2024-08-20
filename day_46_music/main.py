@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-date = input("Which year would you like to travel to? Type the date in thif format YYY-MM-DD: ")
+date = input("Which year would you like to travel to? Type the date in this format YYYY-MM-DD: ")
 url = "https://www.billboard.com/charts/hot-100/" + date
 
 respose = requests.get(url)
