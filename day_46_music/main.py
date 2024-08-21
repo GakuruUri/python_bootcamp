@@ -11,9 +11,8 @@ soup = BeautifulSoup(respose.text, "html.parser")
 song_names_spans = soup.select("li ul li h3")
 song_names = [song.getText().strip() for song in song_names_spans]
 
-with open("songs.txt", mode="w") as file:
-    for song in song_names:
-        file.write(f"{song}\n")
+
+
 
 #  id="title-of-a-story",
 
@@ -21,7 +20,11 @@ with open("songs.txt", mode="w") as file:
 # data = response.text
 
 # soup = BeautifulSoup(data, "html.parser")
-# section_heading = soup.find_all(name="h3", id="title-of-a-story")
+# section_heading = soup.find_all(name="h3", id="title-of-a-story", class_="c-title")
 # song_names = [song.getText().strip() for song in section_heading]
 
 # print(song_names)
+
+with open("songs.txt", mode="w") as file:
+    for song in song_names:
+        file.write(f"{song}\n")
