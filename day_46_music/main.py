@@ -1,9 +1,24 @@
 import requests
 from bs4 import BeautifulSoup
+import spotify
+from spotify.oauth2 import spotifyOAuth
 
+sp = spotify.Spotify(
+    auth_manager=SpotifyOAuth(
+        scoep="playlist-modify-private",
+        redirect_uri="http://example.com",
+        client_id=CLIENT_ID,
+        client_secret=SECRET_KEY,
+        show_dialog=True,
+        cache_path="token.txt",
+        username=vuhaa7dtto3z08p9p2uk6op1s,
+    )
+)
+user_id = sp.current_user()["id"]
 
 date = input("Which year would you like to travel to? Type the date in this format YYYY-MM-DD: ")
 url = "https://www.billboard.com/charts/hot-100/" + date
+
 
 respose = requests.get(url)
 
