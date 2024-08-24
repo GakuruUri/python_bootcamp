@@ -57,7 +57,7 @@ if price_as_float < BUY_PRICE:
 
     with smtplib.SMTP(os.environ["SMTP_ADDRESS"], port=587) as connection:
         connection.starttls()
-        connection.login("Your Gmail Account", "Get App Password") 
+        result = connection.login("Your Gmail Account", "Get App Password") 
         # connection.login(os.environ["EMAIL_ADDRESS"], os.environ["EMAIL_PASSWORD"])
         connection.sendmail(
             from_addr=os.environ["EMAIL_ADDRESS"],
