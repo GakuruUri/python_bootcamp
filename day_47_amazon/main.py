@@ -33,7 +33,7 @@ print(soup.prettify())
 price = soup.find(class_="a-offscreen").get_text()
 # print(f"The current Instant Pot price is ${price}")
 
-#Current price withou the $ sign
+#Current price without the $ sign
 price_without_dollar_sign = price[1:]
 # print(f"The current Instant Pot price is {price_without_dollar_sign}")
 
