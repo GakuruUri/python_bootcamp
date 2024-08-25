@@ -39,7 +39,7 @@ price_without_dollar_sign = price[1:]
 
 # print the price as a floating point
 price_as_float = float(price_without_dollar_sign)
-print(f"The current Instant Pot price is: {price_without_dollar_sign}\n")
+print(f"The current Instant Pot price is: {price_as_float}\n")
 
 # Send email address
 # title = soup.find(id="productTitle").get_text().replace("\r\n", "").replace(" ", "")
