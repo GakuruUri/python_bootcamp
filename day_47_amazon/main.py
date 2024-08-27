@@ -74,7 +74,7 @@ if price_as_float < BUY_PRICE:
 
 
 
-
+# this is frudtrating
 
 
 
