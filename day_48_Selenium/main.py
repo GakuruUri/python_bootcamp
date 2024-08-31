@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 # Keep chrome browser open after program finishes
 chrome_options = webdriver.ChromeOptions()
@@ -8,9 +9,29 @@ chrome_options.add_experimental_option("detach", True)
 
 driver = webdriver.Chrome(options=chrome_options)
 # driver.get("https://www.amazon.com/")
-driver.get("https://www.amazon.com/Instant-Pot-Plus-60-Programmable/dp/B01NBKTPTS/ref=sr_1_1?crid=1RRP3RMZL6W22&dib=eyJ2IjoiMSJ9.JCyn2nZZp1sOG9u3pnBnuofZogJhhDwYTw2Z3fPl3jmY8ocHICNFU7vefeWm8f-kCAgl2CYp8xFRR3VKWmkHdgMumgJwQQmdl_yWUwJF-p-eHesKd-u191CE3glXhdyKMoaqHvcnONRQNS0CDE9pNTE92hyfCHVh9lfq428Gj0DjwKpWl7X7hy6TJfNLH-jNT-CTfJJ2a-G9Axm7ieh-k_8w-i1ITgLq1jS78w6YtoQ.Z17V1gAubv4vHyb0-bgM_GTQKz35PtXx2XuMQHNoKfE&dib_tag=se&keywords=Instant%2BPot%2BDuo%2BPlus%2B9-in-1%2BElectric%2BPressure&qid=1725079813&sprefix=instant%2Bpot%2Bduo%2Bplus%2B9-in-1%2Belectric%2Bpressure%2Caps%2C1010&sr=8-1&th=1")
+driver.get("https://www.python.org/")
+
+# price_dollars = driver.find_element(By.CLASS_NAME, value="a-price-whole")
+# price_cents = driver.find_element(By.CLASS_NAME, value="a-price-fraction")
+# print(f"The price is {price_dollars.text}.{price_cents.text}")
 
 
+# search_bar = driver.find_element(By.NAME, value="q")
+# print(search_bar.get_attribute("placeholder"))
+# button = driver.find_element(By.ID, value="submit")
+# print(button.size)
+# documentation_link = driver.find_element(By.CSS_SELECTOR, value=".documentation-widget a")
+# print(documentation_link.text)
+
+
+# # Xpath
+# bug_link = driver.find_element(By.XPATH, value='//*[@id="site-map"]/div[2]/div/ul/li[3]/a')
+# print(bug_link.text)
+
+
+upcoming_events = driver.find_elements(By.XPATH, value='//*[@id="content"]/div/section/div[2]/div[2]/div/ul')
+for event in upcoming_events:
+    print(data(event))
 
 # driver.close()
-# driver.quit()
+driver.quit()
