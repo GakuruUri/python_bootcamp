@@ -26,11 +26,12 @@ all_portals = driver.find_element(By.LINK_TEXT, value="Content portals")
 # all_portals.click()
 
 
-search = driver.find_element(By.NAME, value="search")
+search = driver.find_element(By.NAME, value="Search")
 
 
 # Send keys to the search bar
-search.send_keys("python", Keys.ENTER)
+search.click()
+search.send_keys("python")
 # search.send_keys(Keys.ENTER)
 
 
